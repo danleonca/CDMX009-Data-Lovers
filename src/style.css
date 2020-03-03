@@ -1,8 +1,9 @@
 body {
-  background:#D46368;
+  background:#DC5D63;
+  font-family: 'Mitr';
 }
 .content {
-  width:1700px;
+  width:auto;
   height: 800px;
   background: #DC5D63;
   padding:10px;
@@ -19,10 +20,10 @@ body {
   justify-content: center;
   align-items: stretch;
 
-
-
 }
+
 .element {
+  padding:70px;
   flex-grow:1;
   color: #AD2026;
   margin:5px;
@@ -30,6 +31,7 @@ body {
   /*height: 50px;*/
   text-align: center;
   background: #FD979C;
+  font-size: 20px
 
 
 }
@@ -38,31 +40,182 @@ body {
   flex-grow: 3;
 }
 
-.top {
-  width:1700px;
+.Filtering{
+  font-size: 20px;
+
+}
+
+.top{
+  width:auto;
   height: 100px;
   background: #DC5D63;
   padding:10px;
   border: 10px solid: #2C3E50;
   margin:20px;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display: flex;
-    background: black;
-align-items: center;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  align-content: space-between;
 }
-.imgpokemon {
+
+.top1{
+  padding:0px;
+  flex-grow:1.5;
+  color: #DC5D63;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align:right;
+  background: #DC5D63;
+
+}
+
+
+.top2{
+  flex-grow:1;
+  color: #DC5D63;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: right;
+  background: #DC5D63;
+}
+
+
+.goToTheTop{
+border-radius: 203px;
+border-color: #FD0F0F;
+text-align: center;
+font-size: 25px;
+padding: 12px 28px;
+background-color: #FD4040;
+
+}
+
+.PageTypesOfpokemon{
+  width:auto;
+  height: 800px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+  text-align: center;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  flex-direction:column;
+}
+.Types{
+
+  flex-grow:7;
+  width:auto;
+  height: 700px;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #FD979C;
+  font-size: 20px;
+  padding:70px;
+}
+.TypeFoot{
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #DC5D63;
+}
+.PageTypesOfWeackness{
 
   width:auto;
-  height: 100px;
+  height: 800px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+  text-align: center;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  flex-direction:column;
+}
+.weackness{
+
+  flex-grow:7;
+  width:auto;
+  height: 700px;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #FD979C;
+  padding:70px;
+  font-size: 20px;
 }
 
-.imgKanto{
-  width: auto;
-  height: 100px;
-  float:right;
+.TypeFoot2{
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #DC5D63;
+}
+ .AllTheFeatures{
+   width:auto;
+   height: 800px;
+   background: #DC5D63;
+   padding:10px;
+   border: 10px solid: #2C3E50;
+   margin:20px;
 
-}
-.goingBack{
-text-align: center;
-}
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display: flex;
+
+   flex-direction:row;
+   flex-wrap:wrap;
+
+   justify-content: center;
+   align-items: stretch;
+ }
+ .AllForEach{
+   flex-grow:2;
+   margin:5px;
+   flex-basis: 50px;
+   /*height: 50px;*/
+   text-align: center;
+   background: #FD979C;
+ }
+ .ImagenPokedex{
+   flex-grow:1;
+   background: #DC5D63;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .Pokedex{
+    width: 450px; height: 650px;
+ }
+
+ .Filtering{
+   border-radius: 203px;
+   border-color: #FD0F0F;
+   text-align: center;
+   font-size: 25px;
+   padding: 12px 28px;
+   background-color: #F97076;
+
+ }
+
+ #FirstPage{
+   display:block;
+ }
+ #SecondPage{
+   display:none;
+ }
+ #ThirdPage{
+   display:none;
+ }
+ #FourthPage{
+   display:none
+ }
