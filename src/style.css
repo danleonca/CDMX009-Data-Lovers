@@ -1,0 +1,88 @@
+body {
+  background:#D46368;
+}
+.content {
+  width:1700px;
+  height: 800px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  justify-content: center;
+  align-items: stretch;
+
+
+
+}
+.element {
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: center;
+  background: #FD979C;
+
+
+}
+
+.element2{
+  flex-grow: 3;
+}
+
+.top {
+  width:1700px;
+  height: 100px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+    background: black;
+align-items: center;
+}
+.imgpokemon {
+
+  width:auto;
+  height: 100px;
+}
+
+.imgKanto{
+  width: auto;
+  height: 100px;
+  float:right;
+
+}
+.goingBack{
+text-align: center;
+}
+.tablePokemon{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2) {
+  width: 45%;
+}
+
+thead th:nth-child(3) {
+  width: 45%;
+}
+th, td {
+  padding: 50px;
+}
