@@ -7,30 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <header>
+    <div class='top'>
+      <div class='top1'>
+        <img class='imgpokemon' src='images/pokemonLogo.svg'>
+      </div>
 
-      <img class='imgpokemon' src='images/pokemonLogo.svg'>
-      <img class='imgKanto' src='images/kantoLogo.svg'>
-
-  </header>
-  <div class='content'>
-    <div class='element element1'>1</div>
-    <div class='element element2'>
-      
-
+      <div class='top2'>
+        <img class='imgKanto' src='images/kanto.svg'>
+      </div>
     </div>
-    <div class='element element3'>3</div>
-  </div>
+  </header>
+  <section id='FirstPage'>
 
-  <footer>
-    <button class="goingBack" id="goToTheTop">Go Back</button>
 
-  </footer>
+    <div class='content'>
+      <div class='element element1'>
+        <h1>What are you Looking for?<h1>
+            <p><button class='Filtering' id='FilterByType'> Types</button>
+              <p><br><br>
+                <p><button class='Filtering' id='FilterByWeackness'> Weackness </button>
+                  <p>
+      </div>
+      <div class='element element2'>
+        <h1> All First Generation Pokemon </h1>
+
+
+          <p>  <table id="table" class="tablePokemon" border="2">
+
+              <thead>
+                <th> No. </th>
+                <th> Who is that Pokemon </th>
+                <th> Image </th>
+              </thead>
+              <tbody id="bodyTable">
+
+              </tbody>
+
+
+            </table></p>
+
+      </div>
+      <div class='element element3'>
+        <h1>Do you wanna evolve?<h1>
+            <p>Enter your Pokémon's name<p>
+                <p> <input type="text" placeholder="name" id='NameForcandy'>
+                  <p> <button class='Filtering' id='findYourCandy'> Send </button>
+                    <p>
+                      <p>
+                        <div id='result'></div>
+      </div>
+    </div>
+
+    <footer>
+      <button class="goToTheTop" id="goToTheTop">Go Back</button>
+
+    </footer>
+  </section>
+
+  <section id='SecondPage'>
+    <div class='PageTypesOfpokemon'>
+      <div class='Types'>
+        <h1> Types Of Pokémon<h1>
+      </div>
+      <div class='TypeFoot'> <button class='goToTheTop' id='ButtonSecondPage'> Go Back </div>
+    </div>
+
+  </section>
+
+  <section id='ThirdPage'>
+    <div class='PageTypesOfWeackness'>
+      <div class='weackness'>
+        <h1>Pokémon's Weackness<h1>
+      </div>
+      <div class='TypeFoot2'> <button class='goToTheTop' id='ButtonThirdPage'> Go Back </div>
+    </div>
+
+  </section>
+
+  <section id='FourthPage'>
+    <div class='AllTheFeatures'>
+      <div class='AllForEach'> </div>
+      <div class='ImagenPokedex'> <img class='Pokedex' src='images/pokedexsvg.svg'> </div>
+    </div>
+
+    <footer>
+      <button class="goToTheTop" id="ButtonFourthPage">Go Back</button>
+
+    </footer>
+  </section>
   <script type="module" src="main.js"></script>
-
 </body>
 
 </html>
