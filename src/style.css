@@ -15,7 +15,7 @@ body {
   display: flex;
 
   flex-direction:row;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
 
   justify-content: center;
   align-items: stretch;
@@ -37,7 +37,13 @@ body {
 }
 
 .element2{
+  overflow: scroll;
   flex-grow: 3;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+
+
 }
 
 .Filtering{
@@ -194,7 +200,7 @@ background-color: #FD4040;
 
  }
  .Pokedex{
-    width: 450px; height: 650px;
+    width: 300px; height: 500px;
  }
 
  .Filtering{
@@ -217,5 +223,8 @@ background-color: #FD4040;
    display:none;
  }
  #FourthPage{
-   display:none
+   display:none;
  }
+#bordertable{
+  border: red 5px;
+}
