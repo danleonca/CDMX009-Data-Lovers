@@ -4,7 +4,7 @@ body {
 }
 .content {
   width:auto;
-  height: 800px;
+  height: 1300px;
   background: #DC5D63;
   padding:10px;
   border: 10px solid: #2C3E50;
@@ -116,7 +116,7 @@ background-color: #FD4040;
 
   flex-grow:7;
   width:auto;
-  height: 700px;
+  height: auto;
   color: #AD2026;
   margin:5px;
   flex-basis: 50px;
@@ -149,7 +149,7 @@ background-color: #FD4040;
 
   flex-grow:7;
   width:auto;
-  height: 700px;
+  height: auto;
   color: #AD2026;
   margin:5px;
   flex-basis: 50px;
@@ -227,4 +227,46 @@ background-color: #FD4040;
  }
 #bordertable{
   border: red 5px;
+}
+nav {
+  margin:auto auto;
+  width:90%
+  max-width: 1000px;
+}
+nav ul{
+  list-style: none;
+}
+nav > ul{
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+}
+nav >ul  li{
+  display:inline-block;
+}
+/*sub menu;*/
+nav > ul > li:hover > ul {
+  display: block;
+}
+nav > ul > li > ul {
+  display:none;
+}
+nav > ul li a{
+  color: #DC5D63;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+
+}
+#filterResult{
+  margin: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+#tarjet{
+   line-height: 1;
 }

@@ -25,11 +25,70 @@
 
 
 <div class='content'>
-<div class='element element1'><h1>What are you Looking for?<h1>
-<p><button class='Filtering' id='FilterByType'> Types</button><p><br><br>
-<p><button class='Filtering' id= 'FilterByWeackness'> Weackness </button><p>
+<div class='element element1'><h1>What are you Looking for?</h1>
+
+  <nav class='navegator' id ='nav'>
+    <ul>
+
+      <li><a href="#" class="menuTypes">Types</a>
+        <ul>
+          <li class='elementType'id ="Water" href= '#'>Water</li>
+          <li class= 'elementType' id ="Flying" href="#" >Flying</li>
+          <li class= 'elementType'id ="Dragon" href="#" > Dragon </li>
+          <li class= 'elementType'id ="Electric" href="#" >Electric</li>
+          <li class= 'elementType'id ="Ghost" href="#" >Ghost</li>
+          <li class= 'elementType'id="Fire"  href="#" >Fire</li>
+          <li class= 'elementType'id ="Ice" href="#" >Ice</li>
+          <li class= 'elementType'id ="Bug" href="#" >Bug</li>
+          <li class= 'elementType'id ="Fighting" href="#" >Fighting</li>
+          <li class= 'elementType'id ="Grass" href="#" >Grass</li>
+          <li class= 'elementType'id ="Psychic" href="#" >Psychic</li>
+          <li class= 'elementType'id ="Normal" href="#" >Normal</li>
+          <li class= 'elementType'id ="Rock" href="#" >Rock</li>
+          <li class= 'elementType'id ="Ground" href="#" >Ground</li>
+          <li class= 'elementType'id ="Poison" href="#" >Poison</li>
+          <li class= 'elementType'id ="Fairy" href="#" >Fairy</li>
+          <li class= 'elementType'id ="Dark" href="#" >Dark</li>
+          <li class= 'elementType'id ="Steel" href="#" >Steel</li>
+
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<nav class='navegator' id ='navW'>
+  <ul>
+
+    <li><a href="#" class="menuWeak">Weaknesses</a>
+      <ul>
+        <li class='elementTypeW'id ="Water" href= '#'>Water</li>
+        <li class= 'elementTypeW' id ="Flying" href="#" >Flying</li>
+        <li class= 'elementTypeW'id ="Dragon" href="#" > Dragon </li>
+        <li class= 'elementTypeW'id ="Electric" href="#" >Electric</li>
+        <li class= 'elementTypeW'id ="Ghost" href="#" >Ghost</li>
+        <li class= 'elementTypeW'id="Fire"  href="#" >Fire</li>
+        <li class= 'elementTypeW'id ="Ice" href="#" >Ice</li>
+        <li class= 'elementTypeW'id ="Bug" href="#" >Bug</li>
+        <li class= 'elementTypeW'id ="Fighting" href="#" >Fighting</li>
+        <li class= 'elementTypeW'id ="Grass" href="#" >Grass</li>
+        <li class= 'elementTypeW'id ="Psychic" href="#" >Psychic</li>
+        <li class= 'elementTypeW'id ="Normal" href="#" >Normal</li>
+        <li class= 'elementTypeW'id ="Rock" href="#" >Rock</li>
+        <li class= 'elementTypeW'id ="Ground" href="#" >Ground</li>
+        <li class= 'elementTypeW'id ="Poison" href="#" >Poison</li>
+        <li class= 'elementTypeW'id ="Fairy" href="#" >Fairy</li>
+        <li class= 'elementTypeW'id ="Dark" href="#" >Dark</li>
+        <li class= 'elementTypeW'id ="Steel" href="#" >Steel</li>
+
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 </div>
-<div class='element element2'><h1>All First generation Pokémons<h1>
+
+
+<div class='element element2'><h1>All First generation Pokémons</h1>
 <p> <table id="table" class="tablePokemon" >
               <thead id='bordertable'>
                 <th> No. </th>
@@ -44,23 +103,42 @@
 </div>
 
 <div class='element element3'>
-  <h1>Do you wanna evolve?<h1>
-  <p>Enter your Pokémon's name<p>
-  <p> <input type="text" placeholder="name" id='NameForcandy'>
-  <p> <button class='Filtering' id= 'findYourCandy'> Send </button><p>
-    <p> <div id='result'>   </div>
-      </div>
+  <div class='CandysToEvolve'>
+  <h1>Do you wanna evolve?</h1>
+  <p>Enter your Pokémon's name</p>
+  <p> <input type="text" placeholder="name" id='NameForcandy'></p>
+  <p> <button class='Filtering' id= 'findYourCandy'> Send </button></p>
+     <div id='result'>   </div>
+   </div>
+
+   <div class='WhoIsYourPokemon'>
+     <h1>Do you want to know everything about your pokemon?</h1>
+     <p>Enter your Pokémon's name</p>
+     <p> <input type="text" placeholder="name" id='NamePokemon2'></p>
+     <p> <button class='Filtering' id= 'findYourPokemon'> Send </button></p>
+
+
+   </div>
+
 </div>
 
-<footer>
-<button class="goToTheTop" id="goToTheTop" >Go Back</button>
 
-</footer>
+
+</div>
+
+
   </section>
 
 <section id='SecondPage'>
 <div class= 'PageTypesOfpokemon'>
-  <div class='Types'><h1> Types Of Pokémon<h1> </div>
+  <div class='Types'><h1> Types Of Pokémon</h1>
+    <p id='filterResult'> </p>
+
+
+
+
+
+  </div>
   <div class='TypeFoot'> <button class='goToTheTop' id= 'ButtonSecondPage'> Go Back </div>
 </div>
 
@@ -68,7 +146,26 @@
 
 <section id='ThirdPage'>
   <div class= 'PageTypesOfWeackness'>
-    <div class='weackness'> <h1>Pokémon's Weackness<h1></div>
+    <div class='weackness'> <h1>Pokémon's Weackness<h1>
+      <h2 id='pokemonsweaks'></h2>
+      <p> <table id="tableW" class="tablePokemon" >
+                    <thead id='bordertable'>
+                      <th> No. </th>
+                      <th>  Name </th>
+                      <th>  Type </th>
+                      <th>  Height </th>
+                      <th>  Weight </th>
+                      <th>  Weaknesses </th>
+                      <th> Image </th>
+                    </thead>
+                    <tbody id="bodyTableW">
+
+                    </tbody>
+                  </table></p>
+</div>
+
+
+
     <div class='TypeFoot2'> <button class='goToTheTop' id= 'ButtonThirdPage'> Go Back </div>
   </div>
 
@@ -78,6 +175,7 @@
     <div class='AllTheFeatures'>
       <div class='AllForEach'> </div>
       <div class='ImagenPokedex'> <img class='Pokedex'src='images/poquedex2.svg'> </div>
+      <div id='result2'>   </div>
     </div>
 
       <footer>
