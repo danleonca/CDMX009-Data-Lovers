@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" media='screen and (min-width: 200px)' />
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Data Lovers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
-</head>
+    <header>
+      <div class='top'>
+            <div class='top1'>
+              <img class='imgpokemon' src='images/pokemonLogo.svg'>
+            </div>
 
-<body>
-
-  <header>
-    <div class='top'>
-      <div class='top1'>
-        <img class='imgpokemon' src='images/pokemonLogo.svg'>
-      </div>
-
-      <div class='top2'>
-        <img class='imgKanto' src='images/kanto.svg'>
-      </div>
-    </div>
-  </header>
-  <section id='FirstPage'>
+            <div class= 'top2'>
+              <img class='imgKanto' src='images/kanto.svg'>
+            </div>
+     </div>
+    </header>
+    <section id='FirstPage'>
 
 
-    <div class='content'>
-      <div class='element element1'>
-        <h1>What are you Looking for?<h1>
-            <p><button class='Filtering' id='FilterByType'> Types</button>
-              <p><br><br>
-                <p><button class='Filtering' id='FilterByWeackness'> Weackness </button>
-                  <p>
-      </div>
-      <div class='element element2'>
-        <h1> All First Generation Pokemon </h1>
-
-
-          <p>  <table id="table" class="tablePokemon" border="2">
-
-              <thead>
+<div class='content'>
+<div class='element element1'><h1>What are you Looking for?<h1>
+<p><button class='Filtering' id='FilterByType'> Types</button><p><br><br>
+<p><button class='Filtering' id= 'FilterByWeackness'> Weackness </button><p>
+</div>
+<div class='element element2'><h1>All First generation Pokémons<h1>
+<p> <table id="table" class="tablePokemon" >
+              <thead id='bordertable'>
                 <th> No. </th>
-                <th> Who is that Pokemon </th>
+                <th>    Who is that Pokemon? </th>
                 <th> Image </th>
               </thead>
               <tbody id="bodyTable">
 
               </tbody>
-
-
             </table></p>
 
-      </div>
-      <div class='element element3'>
-        <h1>Do you wanna evolve?<h1>
-            <p>Enter your Pokémon's name<p>
-                <p> <input type="text" placeholder="name" id='NameForcandy'>
-                  <p> <button class='Filtering' id='findYourCandy'> Send </button>
-                    <p>
-                      <p>
-                        <div id='result'></div>
-      </div>
-    </div>
+</div>
 
+<div class='element element3'>
+  <h1>Do you wanna evolve?<h1>
+  <p>Enter your Pokémon's name<p>
+  <p> <input type="text" placeholder="name" id='NameForcandy'>
+  <p> <button class='Filtering' id= 'findYourCandy'> Send </button><p>
+    <p> <div id='result'>   </div>
+</div>
+</div>
     <footer>
       <button class="goToTheTop" id="goToTheTop">Go Back</button>
 
@@ -93,7 +80,7 @@
   <section id='FourthPage'>
     <div class='AllTheFeatures'>
       <div class='AllForEach'> </div>
-      <div class='ImagenPokedex'> <img class='Pokedex' src='images/pokedexsvg.svg'> </div>
+      <div class='ImagenPokedex'> <img class='Pokedex'src='images/poquedex2.svg'> </div>
     </div>
 
     <footer>
@@ -104,4 +91,10 @@
   <script type="module" src="main.js"></script>
 </body>
 
+      </footer>
+      </section>
+
+    <script type="module" src="main.js"></script>
+
+  </body>
 </html>

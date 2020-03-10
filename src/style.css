@@ -15,7 +15,7 @@ body {
   display: flex;
 
   flex-direction:row;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
 
   justify-content: center;
   align-items: stretch;
@@ -37,8 +37,13 @@ body {
 }
 
 .element2{
-  flex-grow: 1;
+  overflow: scroll;
+  flex-grow: 3;
   padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+
+
 }
 
 .Filtering{
@@ -220,3 +225,6 @@ background-color: #FD4040;
  #FourthPage{
    display:none;
  }
+#bordertable{
+  border: red 5px;
+}
