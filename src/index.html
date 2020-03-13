@@ -1,198 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" media='screen and (min-width: 200px)' />
-    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" media="screen and (min-width: 200px)" />
+  <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+</head>
 
-    <header>
-      <div class='top'>
-            <div class='top1'>
-              <img class='imgpokemon' src='images/pokemonLogo.svg'>
-            </div>
+<body>
 
-            <div class= 'top2'>
-              <img class='imgKanto' src='images/kanto.svg'>
-            </div>
-     </div>
-    </header>
-    <section id='FirstPage'>
+  <header>
+    <div class="top">
+      <div class="top1">
+        <img class="imgpokemon" src="images/pokemonLogo.svg">
+      </div>
+      <div class="top2">
+        <img class="imgKanto" src="images/kanto.svg">
+      </div>
+    </div>
+  </header>
 
+  <section id="FirstPage">
+    <div class="content">
+      <div class="element element1">
+        <h1>What are you Looking for?</h1>
+        <nav class="navegator" id="nav">
+          <ul>
+            <li><a href="#" class="menuTypes">Types</a>
+              <ul>
+                <li class="elementType" id="Water" href="#">Water</li>
+                <li class="elementType" id="Flying" href="#">Flying</li>
+                <li class="elementType" id="Dragon" href="#"> Dragon </li>
+                <li class="elementType" id="Electric" href="#">Electric</li>
+                <li class="elementType" id="Ghost" href="#">Ghost</li>
+                <li class="elementType" id="Fire" href="#">Fire</li>
+                <li class="elementType" id="Ice" href="#">Ice</li>
+                <li class="elementType" id="Bug" href="#">Bug</li>
+                <li class="elementType" id="Fighting" href="#">Fighting</li>
+                <li class="elementType" id="Grass" href="#">Grass</li>
+                <li class="elementType" id="Psychic" href="#">Psychic</li>
+                <li class="elementType" id="Normal" href="#">Normal</li>
+                <li class="elementType" id="Rock" href="#">Rock</li>
+                <li class="elementType" id="Ground" href="#">Ground</li>
+                <li class="elementType" id="Poison" href="#">Poison</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-<div class='content'>
-<div class='element element1'><h1>What are you Looking for?</h1>
+        <nav class="navegator" id="navW">
+          <ul>
+            <li><a href="#" class="menuWeak">Weaknesses</a>
+              <ul>
+                <li class="elementTypeW" id="Water" href="#">Water</li>
+                <li class="elementTypeW" id="Flying" href="#">Flying</li>
+                <li class="elementTypeW" id="Dragon" href="#"> Dragon </li>
+                <li class="elementTypeW" id="Electric" href="#">Electric</li>
+                <li class="elementTypeW" id="Ghost" href="#">Ghost</li>
+                <li class="elementTypeW" id="Fire" href="#">Fire</li>
+                <li class="elementTypeW" id="Ice" href="#">Ice</li>
+                <li class="elementTypeW" id="Bug" href="#">Bug</li>
+                <li class="elementTypeW" id="Fighting" href="#">Fighting</li>
+                <li class="elementTypeW" id="Grass" href="#">Grass</li>
+                <li class="elementTypeW" id="Psychic" href="#">Psychic</li>
+                <li class="elementTypeW" id="Normal" href="#">Normal</li>
+                <li class="elementTypeW" id="Rock" href="#">Rock</li>
+                <li class="elementTypeW" id="Ground" href="#">Ground</li>
+                <li class="elementTypeW" id="Poison" href="#">Poison</li>
+                <li class="elementTypeW" id="Fairy" href="#">Fairy</li>
+                <li class="elementTypeW" id="Dark" href="#">Dark</li>
+                <li class="elementTypeW" id="Steel" href="#">Steel</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-  <nav class='navegator' id ='nav'>
-    <ul>
+      <div class="element element2">
+        <h1>All First generation Pokémons</h1>
+        <p>
+          <table id="table" class="tablePokemon">
+            <thead>
+              <th> No. </th>
+              <th> Who is that Pokemon? </th>
+              <th> Image </th>
+            </thead>
+            <tbody id="bodyTable">
+            </tbody>
+          </table>
+        </p>
+      </div>
 
-      <li><a href="#" class="menuTypes">Types</a>
-        <ul>
-          <li class='elementType'id ="Water" href= '#'>Water</li>
-          <li class= 'elementType' id ="Flying" href="#" >Flying</li>
-          <li class= 'elementType'id ="Dragon" href="#" > Dragon </li>
-          <li class= 'elementType'id ="Electric" href="#" >Electric</li>
-          <li class= 'elementType'id ="Ghost" href="#" >Ghost</li>
-          <li class= 'elementType'id="Fire"  href="#" >Fire</li>
-          <li class= 'elementType'id ="Ice" href="#" >Ice</li>
-          <li class= 'elementType'id ="Bug" href="#" >Bug</li>
-          <li class= 'elementType'id ="Fighting" href="#" >Fighting</li>
-          <li class= 'elementType'id ="Grass" href="#" >Grass</li>
-          <li class= 'elementType'id ="Psychic" href="#" >Psychic</li>
-          <li class= 'elementType'id ="Normal" href="#" >Normal</li>
-          <li class= 'elementType'id ="Rock" href="#" >Rock</li>
-          <li class= 'elementType'id ="Ground" href="#" >Ground</li>
-          <li class= 'elementType'id ="Poison" href="#" >Poison</li>
-          <li class= 'elementType'id ="Fairy" href="#" >Fairy</li>
-          <li class= 'elementType'id ="Dark" href="#" >Dark</li>
-          <li class= 'elementType'id ="Steel" href="#" >Steel</li>
+      <div class="element element3">
+        <div class="CandysToEvolve">
+          <h1>Do you wanna evolve?</h1>
+          <p>Enter your Pokémon"s name</p>
+          <p> <input type="text" placeholder="name" id="NameForcandy"></p>
+          <p> <button class="Filtering" id="findYourCandy"> Send </button></p>
+          <div id="result"> </div>
+        </div>
+        <div class="WhoIsYourPokemon">
+          <h1>Do you want to know everything about your pokemon?</h1>
+          <p>Enter your Pokémon"s name</p>
+          <p> <input type="text" placeholder="name" id="NamePokemon2"></p>
+          <p> <button class="Filtering" id="findYourPokemon"> Send </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<section id="SecondPage">
+  <div class="PageTypesOfpokemon">
+    <div class="Types">
+      <h1> Types Of Pokémon</h1>
+      <p id="nameType"> </p>
+      <p id="filterResult"> </p>
+    </div>
+    <div class="TypeFoot"> <button class="goToTheTop" id="ButtonSecondPage"> Go Back </div>
+  </div>
+</section>
 
-<nav class='navegator' id ='navW'>
-  <ul>
-
-    <li><a href="#" class="menuWeak">Weaknesses</a>
-      <ul>
-        <li class='elementTypeW'id ="Water" href= '#'>Water</li>
-        <li class= 'elementTypeW' id ="Flying" href="#" >Flying</li>
-        <li class= 'elementTypeW'id ="Dragon" href="#" > Dragon </li>
-        <li class= 'elementTypeW'id ="Electric" href="#" >Electric</li>
-        <li class= 'elementTypeW'id ="Ghost" href="#" >Ghost</li>
-        <li class= 'elementTypeW'id="Fire"  href="#" >Fire</li>
-        <li class= 'elementTypeW'id ="Ice" href="#" >Ice</li>
-        <li class= 'elementTypeW'id ="Bug" href="#" >Bug</li>
-        <li class= 'elementTypeW'id ="Fighting" href="#" >Fighting</li>
-        <li class= 'elementTypeW'id ="Grass" href="#" >Grass</li>
-        <li class= 'elementTypeW'id ="Psychic" href="#" >Psychic</li>
-        <li class= 'elementTypeW'id ="Normal" href="#" >Normal</li>
-        <li class= 'elementTypeW'id ="Rock" href="#" >Rock</li>
-        <li class= 'elementTypeW'id ="Ground" href="#" >Ground</li>
-        <li class= 'elementTypeW'id ="Poison" href="#" >Poison</li>
-        <li class= 'elementTypeW'id ="Fairy" href="#" >Fairy</li>
-        <li class= 'elementTypeW'id ="Dark" href="#" >Dark</li>
-        <li class= 'elementTypeW'id ="Steel" href="#" >Steel</li>
-
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-</div>
-
-
-<div class='element element2'><h1>All First generation Pokémons</h1>
-<p> <table id="table" class="tablePokemon" >
-              <thead id='bordertable'>
+  <section id="ThirdPage">
+    <div class="PageTypesOfWeackness">
+      <div class="weackness">
+        <h1>Pokémon"s Weackness<h1>
+          <h2 id="pokemonsweaks"></h2>
+          <p>
+            <table id="tableW" class="tablePokemon">
+              <thead id="bordertable">
                 <th> No. </th>
-                <th>    Who is that Pokemon? </th>
+                <th> Name </th>
+                <th> Type </th>
+                <th> Height </th>
+                <th> Weight </th>
+                <th> Weaknesses </th>
                 <th> Image </th>
               </thead>
-              <tbody id="bodyTable">
-
+              <tbody id="bodyTableW">
               </tbody>
-            </table></p>
-
-</div>
-
-<div class='element element3'>
-  <div class='CandysToEvolve'>
-  <h1>Do you wanna evolve?</h1>
-  <p>Enter your Pokémon's name</p>
-  <p> <input type="text" placeholder="name" id='NameForcandy'></p>
-  <p> <button class='Filtering' id= 'findYourCandy'> Send </button></p>
-     <div id='result'>   </div>
-   </div>
-
-   <div class='WhoIsYourPokemon'>
-     <h1>Do you want to know everything about your pokemon?</h1>
-     <p>Enter your Pokémon's name</p>
-     <p> <input type="text" placeholder="name" id='NamePokemon2'></p>
-     <p> <button class='Filtering' id= 'findYourPokemon'> Send </button></p>
-
-
-   </div>
-
-</div>
-
-
-
-</div>
-</div>
-    <footer>
-      <button class="goToTheTop" id="goToTheTop">Go Back</button>
-
-
-  </section>
-
-<section id='SecondPage'>
-<div class= 'PageTypesOfpokemon'>
-  <div class='Types'><h1> Types Of Pokémon</h1>
-    <p id='filterResult'> </p>
-
-
-
-
-
-  </div>
-  <div class='TypeFoot'> <button class='goToTheTop' id= 'ButtonSecondPage'> Go Back </div>
-</div>
-
-  </section>
-
-<section id='ThirdPage'>
-  <div class= 'PageTypesOfWeackness'>
-    <div class='weackness'> <h1>Pokémon's Weackness<h1>
-      <h2 id='pokemonsweaks'></h2>
-      <p> <table id="tableW" class="tablePokemon" >
-                    <thead id='bordertable'>
-                      <th> No. </th>
-                      <th>  Name </th>
-                      <th>  Type </th>
-                      <th>  Height </th>
-                      <th>  Weight </th>
-                      <th>  Weaknesses </th>
-                      <th> Image </th>
-                    </thead>
-                    <tbody id="bodyTableW">
-
-                    </tbody>
-                  </table></p>
-</div>
-
-
-
-    <div class='TypeFoot2'> <button class='goToTheTop' id= 'ButtonThirdPage'> Go Back </div>
-  </div>
-
-  </section>
-
-  <section id='FourthPage'>
-    <div class='AllTheFeatures'>
-      <div class='AllForEach'> </div>
-      <div class='ImagenPokedex'> <img class='Pokedex'src='images/poquedex2.svg'> </div>
-      <div id='result2'>   </div>
-    </div>
-
-    <footer>
-      <button class="goToTheTop" id="ButtonFourthPage">Go Back</button>
-
-    </footer>
-  </section>
-  <script type="module" src="main.js"></script>
-</body>
-
-      </footer>
+            </table>
+          </p>
+        </div>
+        <div class="TypeFoot2"> <button class="goToTheTop" id="ButtonThirdPage"> Go Back </div>
+        </div>
       </section>
 
-    <script type="module" src="main.js"></script>
+      <section id="FourthPage">
+        <div class="AllTheFeatures">
+          <div class="AllForEach">
+            <div id="result2"> </div>
+          </div>
+          <div class="ImagenPokedex" id="imgPokedex"> </div>
+        </div>
+        <footer>
+          <button class="goToTheTop" id="ButtonFourthPage">Go Back</button>
+        </footer>
+      </section>
 
-  </body>
-</html>
+      <script type="module" src="main.js"></script>
+    </body>
+    </html>
