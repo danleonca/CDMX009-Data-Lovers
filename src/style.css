@@ -38,8 +38,18 @@ body {
 .element1, .element2, .element3 {
   border-radius: 30px;
 }
+.menuTypes, .menuWeak{
+  text-align: left;
+}
+.element1, .element2, .element3{
+  border-radius: 30px;
+}
 
+<<<<<<< HEAD
 .element2 {
+=======
+.element2{
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
   text-align: center;
   overflow: auto;
   flex-grow: 3;
@@ -49,6 +59,30 @@ body {
 .element2::-webkit-scrollbar {
   -webkit-appearance: none;
 }
+<<<<<<< HEAD
+=======
+
+.element2::-webkit-scrollbar:vertical {
+  width:10px;
+
+}
+
+.element2::-webkit-scrollbar-thumb {
+  background-color: #AD2026;
+  border-radius: 20px;
+  border: 2px solid #2C3E50;
+}
+
+.element2::-webkit-scrollbar-track {
+  border-radius: 10px;
+
+}
+.tablePokemon{
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 25px 20px;
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
 
 .element2::-webkit-scrollbar:vertical {
   width: 10px;
@@ -109,13 +143,26 @@ body {
   background: #DC5D63;
 }
 
+<<<<<<< HEAD
 .goToTheTop {
+=======
+
+.goToTheTop{
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
   border-radius: 203px;
   border-color: #FD0F0F;
   text-align: center;
   font-size: 25px;
+<<<<<<< HEAD
   padding: 12px 28px;
   background-color: #FD4040;
+=======
+  color: #C0171E;
+
+  padding: 12px 28px;
+  background-color: #FD4040;
+
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
 }
 
 .PageTypesOfpokemon {
@@ -185,6 +232,7 @@ body {
   flex-basis: 50px;
   background: #DC5D63;
 }
+<<<<<<< HEAD
 
 .AllTheFeatures {
   width: auto;
@@ -248,6 +296,72 @@ body {
 }
 
 #bordertable {
+=======
+.AllTheFeatures{
+  width:auto;
+  height: auto;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  justify-content: center;
+  align-items: stretch;
+}
+.AllForEach{
+  flex-grow:1;
+  margin:10px;
+  padding: 10px
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: center;
+  background: ##FD979C;
+  border-radius: 100px;
+  color: #DC5D63;
+}
+.ImagenPokedex{
+  flex-grow:1;
+
+  justify-content: center;
+  align-items: center;
+  background-image:url(images/poquedex2.svg);
+  background-repeat: no-repeat;
+
+
+}
+
+
+.Filtering{
+  border-radius: 203px;
+  border-color: #FD0F0F;
+  text-align: center;
+  font-size: 25px;
+  padding: 12px 28px;
+  background-color: #F97076;
+
+}
+
+#FirstPage{
+  display:block;
+}
+#SecondPage{
+  display:none;
+}
+#ThirdPage{
+  display:none;
+}
+#FourthPage{
+  display:none;
+}
+#bordertable{
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
   border: red 5px;
 }
 
@@ -295,19 +409,44 @@ nav>ul li a {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .tarjet {
   flex-direction: row;
   flex-wrap: wrap;
   /*align-content: space-between;*/
+=======
+
+
+.tarjet{
+
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: space-between;
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
   align-items: stretch;
   background: #F8ABAE;
   border-radius: 5%;
   margin: 60px;
 }
+<<<<<<< HEAD
 
 .fotoPoke {
   flex: auto;
   position: absolute;
+=======
+.card{
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+  background: #F8ABAE;
+  border-radius: 5%;
+  margin: 60px;
+}
+.fotoPoke{
+  flex:auto;
+  position:absolute;
+>>>>>>> c7939c9ebf212bbd18e07f96f286c0ec73a753ed
   margin-left: 50px;
   margin-top: 126px;
 }
