@@ -1,0 +1,332 @@
+body {
+  background:#DC5D63;
+  font-family: 'Mitr';
+}
+.content {
+  width:auto;
+  height: 1300px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+
+  flex-direction:row;
+  flex-wrap:nowrap;
+
+  justify-content: center;
+  align-items: stretch;
+
+}
+
+.element {
+  padding:70px;
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: center;
+  background: #FD979C;
+  font-size: 20px
+
+
+}
+.menuTypes, .menuWeak{
+  text-align: left;
+}
+.element1, .element2, .element3{
+  border-radius: 30px;
+}
+
+.element2{
+  text-align: center;
+  overflow: auto;
+  flex-grow: 3;
+  padding: 0px;
+}
+
+.element2::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.element2::-webkit-scrollbar:vertical {
+  width:10px;
+
+}
+
+.element2::-webkit-scrollbar-thumb {
+  background-color: #AD2026;
+  border-radius: 20px;
+  border: 2px solid #2C3E50;
+}
+
+.element2::-webkit-scrollbar-track {
+  border-radius: 10px;
+
+}
+.tablePokemon{
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 25px 20px;
+
+}
+
+.Filtering{
+  font-size: 20px;
+
+}
+
+.top{
+  width:auto;
+  height: 100px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  align-content: space-between;
+}
+
+.top1{
+  padding:0px;
+  flex-grow:1.5;
+  color: #DC5D63;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align:right;
+  background: #DC5D63;
+
+}
+
+
+.top2{
+  flex-grow:1;
+  color: #DC5D63;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: right;
+  background: #DC5D63;
+}
+
+
+.goToTheTop{
+  border-radius: 203px;
+  border-color: #FD0F0F;
+  text-align: center;
+  font-size: 25px;
+  color: #C0171E;
+
+  padding: 12px 28px;
+  background-color: #FD4040;
+
+}
+
+.PageTypesOfpokemon{
+  width:auto;
+  height: 800px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+  text-align: center;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  flex-direction:column;
+}
+.Types{
+
+  flex-grow:7;
+  width:auto;
+  height: auto;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #FD979C;
+  font-size: 20px;
+  padding:70px;
+}
+.TypeFoot{
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #DC5D63;
+}
+.PageTypesOfWeackness{
+
+  width:auto;
+  height: 800px;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+  text-align: center;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+  flex-direction:column;
+}
+.weackness{
+
+  flex-grow:7;
+  width:auto;
+  height: auto;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #FD979C;
+  padding:70px;
+  font-size: 20px;
+}
+
+.TypeFoot2{
+  flex-grow:1;
+  color: #AD2026;
+  margin:5px;
+  flex-basis: 50px;
+  background: #DC5D63;
+}
+.AllTheFeatures{
+  width:auto;
+  height: auto;
+  background: #DC5D63;
+  padding:10px;
+  border: 10px solid: #2C3E50;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display: flex;
+
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  justify-content: center;
+  align-items: stretch;
+}
+.AllForEach{
+  flex-grow:1;
+  margin:10px;
+  padding: 10px
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align: center;
+  background: ##FD979C;
+  border-radius: 100px;
+  color: #DC5D63;
+}
+.ImagenPokedex{
+  flex-grow:1;
+
+  justify-content: center;
+  align-items: center;
+  background-image:url(images/poquedex2.svg);
+  background-repeat: no-repeat;
+
+
+}
+
+
+.Filtering{
+  border-radius: 203px;
+  border-color: #FD0F0F;
+  text-align: center;
+  font-size: 25px;
+  padding: 12px 28px;
+  background-color: #F97076;
+
+}
+
+#FirstPage{
+  display:block;
+}
+#SecondPage{
+  display:none;
+}
+#ThirdPage{
+  display:none;
+}
+#FourthPage{
+  display:none;
+}
+#bordertable{
+  border: red 5px;
+}
+nav {
+  margin:auto auto;
+  width:90%
+  max-width: 1000px;
+}
+nav ul{
+  list-style: none;
+}
+nav > ul{
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+}
+nav >ul  li{
+  display:inline-block;
+}
+/*sub menu;*/
+nav > ul > li:hover > ul {
+  display: block;
+}
+nav > ul > li > ul {
+  display:none;
+}
+nav > ul li a{
+  color: #DC5D63;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+
+}
+#filterResult{
+  margin: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+
+
+.tarjet{
+
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+  background: #F8ABAE;
+  border-radius: 5%;
+  margin: 60px;
+}
+.card{
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+  background: #F8ABAE;
+  border-radius: 5%;
+  margin: 60px;
+}
+.fotoPoke{
+  flex:auto;
+  position:absolute;
+  margin-left: 50px;
+  margin-top: 126px;
+}
