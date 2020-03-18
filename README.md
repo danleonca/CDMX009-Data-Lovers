@@ -19,19 +19,19 @@ Consideramos que los usuarios para poder evolucionar a su pokemon necesitarian s
 Por ultimo incluye un apartado para poder ver la especificaciones de los pokemons esto para conocer todo sobre su pokemon.
 
 
-![Final](src/images/productofinal.PNG)
+![Final](src/images/productofinal.png)
 
-![Final](src/images/productofinal1.PNG)
+![Final](src/images/productofinal1.png)
 
-![Final](src/images/productofinal3.PNG)
+![Final](src/images/productofinal3.png)
 
-![Final](src/images/productofinal4.PNG)
-
-
-![Prototipo](src/images/prototipo.PNG)
+![Final](src/images/productofinal4.png)
 
 
-![Prototipo Baja Fidelidad](src/images/bajafidelidad.PNG)
+![Prototipo](src/images/prototipo.png)
+
+
+![Prototipo Baja Fidelidad](src/images/bajafidelidad.png)
 
 
 
@@ -40,8 +40,8 @@ https://www.figma.com/proto/Dg6OYTUK625lLm6F7IlSmT/Pokemon?node-id=0%3A1&scaling
 
 
 ## Historias de usuarios
-![historia de usuario](src/images/historias.PNG)
-![historia de usuario](src/images/historias1.PNG)
+![historia de usuario](src/images/historias.png)
+![historia de usuario](src/images/historias1.png)
 
 
 
