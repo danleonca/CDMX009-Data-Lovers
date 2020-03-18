@@ -12,3 +12,16 @@
 //   });
 // });
 //
+import data from '../src/data';
+describe('data.candys', () => {
+
+    it('should be a function', () => {
+      expect(typeof data.candys).toBe('function');
+    });
+
+
+
+
+
+
+}); // fin
