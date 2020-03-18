@@ -41,7 +41,7 @@ for (let i = 0; i < buttonTop.length; i += 1) {
   });
 }
 
-function numberOfCandys() {
+export function numberOfCandys() {
   const insertedName = document.getElementById('NameForcandy').value;
   const insertedRealName = insertedName.charAt(0).toUpperCase() + insertedName.slice(1);
   const showMeCandy = candys(insertedRealName);

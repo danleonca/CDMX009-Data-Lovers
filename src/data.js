@@ -59,7 +59,7 @@ export function printInfoPokemon(showMyPokemon1, showResulterPokemon1, putImagen
     return showResulterPokemon1.insertAdjacentHTML('afterbegin', infoToShow);
   });
   showMyPokemon1.map((imagen) => {
-    const imagen2 = `<div class= 'fotoPoke'> <img  style= 'width:200px; height: auto;' class="imageBox" src ="${imagen.img}"></div> `;
+    const imagen2 = `<div class= 'fotoPoke'> <img  style= 'width:250px; height: auto;' class="imageBox" src ="${imagen.img}"></div> `;
     return putImagen1.insertAdjacentHTML('afterbegin', imagen2);
   });
 }

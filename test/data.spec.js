@@ -17,6 +17,7 @@ import {
 }
   from '../src/data.js';
 
+
 describe('candys', () => {
   it('debería ser una función', () => {
     expect(typeof candys).toBe('function');

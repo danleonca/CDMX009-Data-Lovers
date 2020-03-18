@@ -3,37 +3,32 @@ body {
   font-family: 'Mitr';
 }
 .content {
-  width:auto;
+  width: auto;
   height: 1300px;
   background: #DC5D63;
-  padding:10px;
+  padding: 10px;
   border: 10px solid: #2C3E50;
-  margin:20px;
-
-  display:-webkit-flex;
-  display:-ms-flexbox;
+  margin: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-
-  flex-direction:row;
-  flex-wrap:nowrap;
-
+   flex-flow:row wrap;
   justify-content: center;
   align-items: stretch;
-
 }
 
 .element {
-  padding:70px;
-  flex-grow:1;
+  padding: 70px;
   color: #AD2026;
-  margin:5px;
+  margin: 5px;
   flex-basis: 50px;
   /*height: 50px;*/
   text-align: center;
   background: #FD979C;
   font-size: 20px
-
-
+}
+.element1, .element3{
+  flex-grow: 1
 }
 .menuTypes, .menuWeak{
   text-align: left;
@@ -46,7 +41,8 @@ body {
   text-align: center;
   overflow: auto;
   flex-grow: 3;
-  padding: 0px;
+
+
 }
 
 .element2::-webkit-scrollbar {
@@ -176,6 +172,7 @@ body {
   display:-ms-flexbox;
   display: flex;
   flex-direction:column;
+  align-items: stretch;
 }
 .weackness{
 
@@ -184,10 +181,29 @@ body {
   height: auto;
   color: #AD2026;
   margin:5px;
-  flex-basis: 50px;
+  /*flex-basis: 50px;*/
   background: #FD979C;
   padding:70px;
   font-size: 20px;
+  overflow: auto;
+}
+.weackness::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.weackness::-webkit-scrollbar:vertical {
+  width:10px;
+
+}
+
+.weackness::-webkit-scrollbar-thumb {
+  background-color: #AD2026;
+  border-radius: 20px;
+  border: 2px solid #2C3E50;
+}
+
+.weackness::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 .TypeFoot2{
@@ -231,8 +247,7 @@ body {
 
   justify-content: center;
   align-items: center;
-  background-image:url(images/poquedex2.svg);
-  background-repeat: no-repeat;
+
 
 
 }
