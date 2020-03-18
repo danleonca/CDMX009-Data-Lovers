@@ -12,7 +12,8 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-   flex-flow:row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
 }
@@ -148,7 +149,7 @@ body {
   color: #AD2026;
   margin:5px;
   flex-basis: 50px;
-  background: #FD979C;
+  background: #DC5D63;
   font-size: 20px;
   padding:70px;
 }
@@ -247,7 +248,6 @@ body {
 
   justify-content: center;
   align-items: center;
-
 
 
 }
