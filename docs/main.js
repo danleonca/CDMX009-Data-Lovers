@@ -22,9 +22,9 @@ data.pokemon.forEach((infodatos) => { // recorremos todos los productos
     document.getElementById('FirstPage').style.display = 'none';
     document.getElementById('FourthPage').style.display = 'block';
     const showResulterPokemon = document.getElementById('result2');
-    const putImage = document.getElementById('imgPokedex');
+    // const putImage = document.getElementById('imgPokedex');
     const showMyPokemon = findYourPokemon(infodatos.name);
-    printInfoPokemon(showMyPokemon, showResulterPokemon, putImage);
+    printInfoPokemon(showMyPokemon, showResulterPokemon);
   });
   tr.appendChild(tdImg);
   tablePokemonKanto.appendChild(tr);
@@ -66,7 +66,7 @@ export function numberOfCandys() {
 
 function pokemonName() {
   const showResulterPokemon = document.getElementById('result2');
-  const putImagen = document.getElementById('imgPokedex');
+  //  const putImagen = document.getElementById('imgPokedex');
   const nameInserted = document.getElementById('NamePokemon2').value;
   const inserted = nameInserted.charAt(0).toUpperCase() + nameInserted.slice(1);
   const inputName = document.getElementById('resultName');
@@ -77,7 +77,7 @@ function pokemonName() {
     if (inserted === namePoke.name) {
       document.getElementById('FirstPage').style.display = 'none';
       document.getElementById('FourthPage').style.display = 'block';
-      printInfoPokemon(showMyPokemon, showResulterPokemon, putImagen);
+      printInfoPokemon(showMyPokemon, showResulterPokemon);
     } else {
       inputName.innerHTML = `${inserted} isn't a pokemon's name, please check `;
     }

@@ -19,28 +19,28 @@ import {
 
 
 describe('candys', () => {
-  it('debería ser una función', () => {
+  it('should be a function', () => {
     expect(typeof candys).toBe('function');
   });
-  it('desbería regresar el atributo candy_acount del arreglo cuando se escribe el nombre de un pokemon', () => {
+  it('should return candy_count from the array when you type the pokemons name', () => {
     expect(typeof candys()).toBe('object');
   });
 });
 
 describe('findYourPokemon', () => {
-  it('debaría ser una función', () => {
+  it('should be a function', () => {
     expect(typeof findYourPokemon).toBe('function');
   });
-  it('debería regresar la info de ese pokemon', () => {
+  it('should return the pokemons info', () => {
     expect(typeof findYourPokemon()).toBe('object');
   });
 });
 
 describe('filterData', () => {
-  it('dería filtrar los pokemones del elemento seleccionado', () => {
+  it('should filter the pokemons of the selected element', () => {
     expect(filterData('Water')).toBeTruthy();
   });
-  it('debería mostrarme a todos los tipo fuego cuando filtro a los tipo fuego', () => {
+  it('should show me all fire pokemons when I select the elemnt fire', () => {
     expect(filterData('Fire')).toEqual([{
       avg_spawns: 25.3, candy: 'Charmander Candy', candy_count: 25, egg: '2 km', height: '0.61 m', id: 4, img: 'http://www.serebii.net/pokemongo/pokemon/004.png', multipliers: [1.65], name: 'Charmander', next_evolution: [{ name: 'Charmeleon', num: '005' }, { name: 'Charizard', num: '006' }], num: '004', spawn_chance: 0.253, spawn_time: '08:45', type: ['Fire'], weaknesses: ['Water', 'Ground', 'Rock'], weight: '8.5 kg',
     }, {
@@ -69,10 +69,10 @@ describe('filterData', () => {
   });
 });
 describe('filterWeak', () => {
-  it('dería filtrar los pokemones y regresar un arreglo nuevo', () => {
+  it('should filter the pokemons and return a new array', () => {
     expect(filterWeak('Water')).toBeTruthy();
   });
-  it('debería de filtrar a los pokemones que son débiles contra los pokemones tipo venenoso', () => {
+  it('should filter the pokemons that are weak against the poison pokemons', () => {
     expect(filterWeak('Poison')).toEqual([{
       avg_spawns: 236, candy: 'Paras Candy', candy_count: 50, egg: '5 km', height: '0.30 m', id: 46, img: 'http://www.serebii.net/pokemongo/pokemon/046.png', multipliers: [2.02], name: 'Paras', next_evolution: [{ name: 'Parasect', num: '047' }], num: '046', spawn_chance: 2.36, spawn_time: '01:42', type: ['Bug', 'Grass'], weaknesses: ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Rock'], weight: '5.4 kg',
     }, {
@@ -87,12 +87,12 @@ describe('filterWeak', () => {
   });
 });
 describe('printData', () => {
-  it('debe ser una función', () => {
+  it('should be a function', () => {
     expect(typeof printData).toBe('function');
   });
 });
 describe('printInfoPokemon', () => {
-  it('debe ser una función', () => {
+  it('should be a function', () => {
     expect(typeof printInfoPokemon).toBe('function');
   });
 });

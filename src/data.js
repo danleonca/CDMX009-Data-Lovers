@@ -21,7 +21,7 @@ export function filterWeak(elementoW) {
 }
 export function printData(cosaParaimprimir, printPalce) {
   cosaParaimprimir.forEach((pokemons) => {
-    const infoPokemon = `<div class='tarjet'> <h2> ${pokemons.num} </h2> <h3> ${pokemons.name} </h3>    <figure> <img = class "imageBox" src ="${pokemons.img}"> </figure>
+    const infoPokemon = `<div class='tarjet'> <h2> ${pokemons.num} </h2> <h3> ${pokemons.name} </h3>    <figure> <img  class= "imageBox" src ="${pokemons.img}"> </figure>
     <dt>TYPE: ${pokemons.type} </dt>
     <dt>HEIGHT:${pokemons.height}</dt>
     <dt>WEIGHT:${pokemons.weight}</dt>
@@ -40,9 +40,9 @@ export function printData(cosaParaimprimir, printPalce) {
   });
 }
 
-export function printInfoPokemon(showMyPokemon1, showResulterPokemon1, putImagen1) {
+export function printInfoPokemon(showMyPokemon1, showResulterPokemon1) {
   showMyPokemon1.map((pokemon) => {
-    const infoToShow = `<div class='card'> <h2> ${pokemon.num} </h2> <h3> ${pokemon.name} </h3>
+    const infoToShow = `<div class='card'> <h2> ${pokemon.num} </h2> <h3> ${pokemon.name} </h3> <figure> <img  style= 'width:250px; height: auto;' class="imageBox" src ="${pokemon.img}"> </figure>
       <dt>TYPE: ${pokemon.type} </dt>
       <dt>HEIGHT:${pokemon.height}</dt>
       <dt>WEIGHT:${pokemon.weight}</dt>
@@ -57,9 +57,5 @@ export function printInfoPokemon(showMyPokemon1, showResulterPokemon1, putImagen
       <dt>${pokemon.weaknesses}</dt> </div>
       `;
     return showResulterPokemon1.insertAdjacentHTML('afterbegin', infoToShow);
-  });
-  showMyPokemon1.map((imagen) => {
-    const imagen2 = `<div class= 'fotoPoke'> <img  style= 'width:250px; height: auto;' class="imageBox" src ="${imagen.img}"></div> `;
-    return putImagen1.insertAdjacentHTML('afterbegin', imagen2);
   });
 }
