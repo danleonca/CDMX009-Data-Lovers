@@ -1,22 +1,9 @@
-// importamos la función `example`
-// import { example } from "../src/data";
-//
-// describe('example', () => {
-//
-//   it('debería ser una función', () => {
-//     expect(typeof example).toBe('function');
-//   });
-//
-//   describe('example', () => {
-//      escribe aquí tu test
-//   });
-// });
-//
+
 import {
   candys, findYourPokemon, filterData, filterWeak, printData, printInfoPokemon,
 }
   from '../src/data.js';
-
+// import data from '../src/data/pokemon/pokemon.js';
 
 describe('candys', () => {
   it('should be a function', () => {

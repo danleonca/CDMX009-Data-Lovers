@@ -19,8 +19,8 @@ export function filterData(elemento) {
 export function filterWeak(elementoW) {
   return data.pokemon.filter((pokeW) => pokeW.weaknesses.includes(elementoW));
 }
-export function printData(cosaParaimprimir, printPalce) {
-  cosaParaimprimir.forEach((pokemons) => {
+export function printData(arrayToPrint, printPalce) {
+  arrayToPrint.forEach((pokemons) => {
     const infoPokemon = `<div class='tarjet'> <h2> ${pokemons.num} </h2> <h3> ${pokemons.name} </h3>    <figure> <img  class= "imageBox" src ="${pokemons.img}"> </figure>
     <dt>TYPE: ${pokemons.type} </dt>
     <dt>HEIGHT:${pokemons.height}</dt>
@@ -56,6 +56,7 @@ export function printInfoPokemon(showMyPokemon1, showResulterPokemon1) {
       <dt>WEAKNESSES:</dt>
       <dt>${pokemon.weaknesses}</dt> </div>
       `;
+
     return showResulterPokemon1.insertAdjacentHTML('afterbegin', infoToShow);
   });
 }

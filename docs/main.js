@@ -66,11 +66,9 @@ export function numberOfCandys() {
 
 function pokemonName() {
   const showResulterPokemon = document.getElementById('result2');
-  //  const putImagen = document.getElementById('imgPokedex');
   const nameInserted = document.getElementById('NamePokemon2').value;
   const inserted = nameInserted.charAt(0).toUpperCase() + nameInserted.slice(1);
   const inputName = document.getElementById('resultName');
-  // let showMyPokemon= findYourPokemon(inserted);
   const showMyPokemon = findYourPokemon(inserted);
 
   data.pokemon.forEach((namePoke) => {
