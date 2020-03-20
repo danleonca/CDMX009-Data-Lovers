@@ -4,7 +4,6 @@ import {
   from '../src/data.js';
 // import data from '../src/data/pokemon/pokemon.js';
 
-
 describe('candys', () => {
   it('should be a function', () => {
     expect(typeof candys).toBe('function');
