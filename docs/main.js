@@ -1,12 +1,7 @@
 import data from './data/pokemon/pokemon.js';
- import {
-  candys,
-  filterData,
-  filterWeak,
-  findYourPokemon,
-  printData,
-  printInfoPokemon,
- }
+import {
+  candys, filterData, filterWeak, findYourPokemon, printData, printInfoPokemon,
+}
   from './data.js';
 
 const tablePokemonKanto = document.querySelector('#bodyTable'); // dibujamos la tabla
@@ -89,8 +84,8 @@ function pokemonName() {
   });
 }
 
- const printFilter = document.getElementById('filterResult'); // para saber donde se tienen que imprimir los resultados del filtro type
- const pokemonType = document.querySelectorAll('.elementType'); // que me traiga el valor o nombre de cada elemnto
+const printFilter = document.getElementById('filterResult'); // para saber donde se tienen que imprimir los resultados del filtro type
+const pokemonType = document.querySelectorAll('.elementType'); // que me traiga el valor o nombre de cada elemnto
 
 for (let i = 0; i < pokemonType.length; i += 1) {
   pokemonType[i].addEventListener('click', () => {
@@ -103,7 +98,7 @@ for (let i = 0; i < pokemonType.length; i += 1) {
   });
 }
 
-  const pokemonWeak = document.getElementsByClassName('elementTypeW');
+const pokemonWeak = document.getElementsByClassName('elementTypeW');
 for (let i = 0; i < pokemonWeak.length; i += 1) {
   pokemonWeak[i].addEventListener('click', () => {
     document.getElementById('FirstPage').style.display = 'none';
@@ -136,7 +131,7 @@ for (let i = 0; i < pokemonWeak.length; i += 1) {
       tdImgW.src = infodatosW.img;
       tr.appendChild(tdImgW);
       tablePokemonKantoW.appendChild(tr);
-  });
+    });
   });
 }
 document.getElementById('findYourCandy').addEventListener('click', numberOfCandys);

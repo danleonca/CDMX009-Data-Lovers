@@ -1,8 +1,7 @@
 body {
-  background: #DC5D63;
+  background:#DC5D63;
   font-family: 'Mitr';
 }
-
 .content {
   width: auto;
   height: 1300px;
@@ -39,7 +38,6 @@ body {
   border-radius: 30px;
 }
 
-
 .element2{
   text-align: center;
   overflow: auto;
@@ -53,7 +51,8 @@ body {
 }
 
 .element2::-webkit-scrollbar:vertical {
-  width: 10px;
+  width:10px;
+
 }
 
 .element2::-webkit-scrollbar-thumb {
@@ -64,52 +63,58 @@ body {
 
 .element2::-webkit-scrollbar-track {
   border-radius: 10px;
-}
 
-.tablePokemon {
+}
+.tablePokemon{
   margin: 0 auto;
   text-align: center;
   border-collapse: separate;
   border-spacing: 25px 20px;
+
 }
 
-.Filtering {
+.Filtering{
   font-size: 20px;
+
 }
 
-.top {
-  width: auto;
+.top{
+  width:auto;
   height: 100px;
   background: #DC5D63;
-  padding: 10px;
+  padding:10px;
   border: 10px solid: #2C3E50;
-  margin: 20px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  margin:20px;
+
+  display:-webkit-flex;
+  display:-ms-flexbox;
   display: flex;
   align-content: space-between;
 }
 
-.top1 {
-  padding: 0px;
-  flex-grow: 1.5;
+.top1{
+  padding:0px;
+  flex-grow:1.5;
   color: #DC5D63;
-  margin: 5px;
+  margin:5px;
+  flex-basis: 50px;
+  /*height: 50px;*/
+  text-align:right;
+  background: #DC5D63;
+
+}
+
+
+.top2{
+  flex-grow:1;
+  color: #DC5D63;
+  margin:5px;
   flex-basis: 50px;
   /*height: 50px;*/
   text-align: right;
   background: #DC5D63;
 }
 
-.top2 {
-  flex-grow: 1;
-  color: #DC5D63;
-  margin: 5px;
-  flex-basis: 50px;
-  /*height: 50px;*/
-  text-align: right;
-  background: #DC5D63;
-}
 
 .goToTheTop{
   border-radius: 203px;
@@ -117,68 +122,69 @@ body {
   text-align: center;
   font-size: 25px;
   color: #C0171E;
+
   padding: 12px 28px;
   background-color: #FD4040;
+
 }
 
-.PageTypesOfpokemon {
-  width: auto;
+.PageTypesOfpokemon{
+  width:auto;
   height: 800px;
   background: #DC5D63;
-  padding: 10px;
+  padding:10px;
   border: 10px solid: #2C3E50;
-  margin: 20px;
+  margin:20px;
   text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  display:-webkit-flex;
+  display:-ms-flexbox;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
+.Types{
 
-.Types {
-  flex-grow: 7;
-  width: auto;
+  flex-grow:7;
+  width:auto;
   height: auto;
   color: #AD2026;
-  margin: 5px;
+  margin:5px;
   flex-basis: 50px;
   background: #DC5D63;
   font-size: 20px;
-  padding: 70px;
+  padding:70px;
 }
-
-.TypeFoot {
-  flex-grow: 1;
+.TypeFoot{
+  flex-grow:1;
   color: #AD2026;
-  margin: 5px;
+  margin:5px;
   flex-basis: 50px;
   background: #DC5D63;
 }
+.PageTypesOfWeackness{
 
-.PageTypesOfWeackness {
-  width: auto;
+  width:auto;
   height: 800px;
   background: #DC5D63;
-  padding: 10px;
+  padding:10px;
   border: 10px solid: #2C3E50;
-  margin: 20px;
+  margin:20px;
   text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  display:-webkit-flex;
+  display:-ms-flexbox;
   display: flex;
   flex-direction:column;
   align-items: stretch;
 }
+.weackness{
 
-.weackness {
-  flex-grow: 7;
-  width: auto;
+  flex-grow:7;
+  width:auto;
   height: auto;
   color: #AD2026;
   margin:5px;
   /*flex-basis: 50px;*/
   background: #FD979C;
-  padding: 70px;
+  padding:70px;
   font-size: 20px;
   overflow: auto;
 }
@@ -201,10 +207,10 @@ body {
   border-radius: 10px;
 }
 
-.TypeFoot2 {
-  flex-grow: 1;
+.TypeFoot2{
+  flex-grow:1;
   color: #AD2026;
-  margin: 5px;
+  margin:5px;
   flex-basis: 50px;
   background: #DC5D63;
 }
@@ -272,50 +278,46 @@ body {
 #bordertable{
   border: red 5px;
 }
-
 nav {
-  margin: auto auto;
-  width: 90% max-width: 1000px;
+  margin:auto auto;
+  width:90%
+  max-width: 1000px;
 }
-
-nav ul {
+nav ul{
   list-style: none;
 }
-
-nav>ul {
+nav > ul{
   display: grid;
   overflow: hidden;
   width: 100%;
   position: relative;
-}
 
-nav>ul li {
-  display: inline-block;
 }
-
+nav >ul  li{
+  display:inline-block;
+}
 /*sub menu;*/
-nav>ul>li:hover>ul {
+nav > ul > li:hover > ul {
   display: block;
 }
-
-nav>ul>li>ul {
-  display: none;
+nav > ul > li > ul {
+  display:none;
 }
-
-nav>ul li a {
+nav > ul li a{
   color: #DC5D63;
   display: block;
   position: relative;
   text-align: center;
   font-size: 25px;
-}
 
-#filterResult {
+}
+#filterResult{
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: space-between;
 }
+
 
 
 .tarjet{

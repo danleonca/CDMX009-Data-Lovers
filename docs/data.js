@@ -1,6 +1,7 @@
+
 import data from './data/pokemon/pokemon.js';
 
-  export function candys(dataUser) {
+export function candys(dataUser) {
   const newC = data.pokemon.filter((uspok) => (uspok.name === dataUser));
   const newCan = newC.map((count) => count.candy_count);
   return newCan;
@@ -32,10 +33,10 @@ export function printData(cosaParaimprimir, printPalce) {
     <dt>SPAWN TIME:${pokemons.spawn_time}</dt>
     <dt>MULTIPLIERS:${pokemons.multipliers}</dt>
     <dt>WEAKNESSES:</dt>
-    <dt>${pokemons.weaknesses}</dt> </div>`
+    <dt>${pokemons.weaknesses}</dt> </div>
+    `;
 
     printPalce.insertAdjacentHTML('beforeend', infoPokemon);
-    
   });
 }
 
